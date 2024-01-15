@@ -24,6 +24,6 @@ urlpatterns = [
     path(api_version, include("buy.urls")),
     path(api_version, include("subscription.urls")),
     path(api_version, include("information.urls")),
-    path("swagger/", schema_view.with_ui("swagger",
-         cache_timeout=0), name="schema-swagger-url")
+    path(api_version, include("client.urls")),
+    path("swagger/", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-url")
 ]
