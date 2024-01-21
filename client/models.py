@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.validators import MaxValueValidator
+# from django.core.validators import MaxValueValidator
 
 class Client(models.Model):
     # BUY_STATUS = [
@@ -8,6 +8,7 @@ class Client(models.Model):
     #     (3, 'PAGADO'),
     #     (4, 'RECHAZADO')
     # ]
+
 
     # datos cliente
     name = models.CharField(max_length=50)
@@ -22,7 +23,7 @@ class Client(models.Model):
 
     # datos del servicios
     service = models.CharField(max_length=50)
-    payment_day = models.PositiveIntegerField(validators=[MaxValueValidator(31)], null=True)
+    # payment_day = models.PositiveIntegerField(validators=[MaxValueValidator(31)], null=True)
 
     # datos para mercadopago
 
