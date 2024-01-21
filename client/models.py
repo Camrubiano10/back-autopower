@@ -17,7 +17,7 @@ class Client(models.Model):
     country = models.CharField(max_length=50)
     phone = models.IntegerField()
     email = models.CharField(max_length=50)
-    movil_type = models.CharField(max_length=50)
+    car_type = models.CharField(max_length=50)
     license_plate = models.CharField(max_length=50)
 
     # datos del servicios
