@@ -7,5 +7,6 @@ router = DefaultRouter()
 router.register(r"client", ClientViewSet)
 
 urlpatterns = [
-    path("", include(router.urls))
+    path("", include(router.urls)),
+    path("license_plate/", include(router.urls))
 ]

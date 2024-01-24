@@ -19,7 +19,7 @@ class Client(models.Model):
     phone = models.IntegerField()
     email = models.CharField(max_length=50)
     car_type = models.CharField(max_length=50)
-    license_plate = models.CharField(max_length=50)
+    license_plate = models.CharField(max_length=50, unique=True)
 
     # datos del servicios
     service = models.CharField(max_length=50)

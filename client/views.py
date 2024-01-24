@@ -7,4 +7,4 @@ from .serializers import ClientSerializer
 class ClientViewSet(ModelViewSet):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
-    # permission_classes = [IsAuthenticated]
+    lookup_field='license_plate'    # permission_classes = [IsAuthenticated]
